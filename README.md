@@ -55,7 +55,7 @@ HOMEPAGE：http://zespia.tw/hexo/
   ```
   Automatic summarization：
   ```
-  $ npm install hexo-summarizer --save
+  $ npm install git://github.com/vfasky/hexo-summarizer.git
   ```
   gzip hexo static files, in order to avoid Apache2/Nginx gzipping at the fly (better performance)
   ```
