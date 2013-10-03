@@ -3,32 +3,32 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-email:
-language:
+title: 两情久长，一起走过
+subtitle: 处严寒而以香袭人，受咏赞却与世无言
+description: 处严寒而以香袭人，受咏赞却与世无言
+author: Shmilee
+email: shmilee.zju@gmail.com
+language: zh-CN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://shmilee.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month-:day-:title.html
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year/:month-:day-:title.md # File name of new posts
 default_layout: post
 auto_spacing: false # Add spaces between asian characters and western characters
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 max_open_file: 100
 multi_thread: true
-filename_case: 0
+filename_case: 0 #Transform filename into (1) lower case or (2) upper case
 highlight:
   enable: true
   line_number: true
@@ -39,13 +39,13 @@ default_category: uncategorized
 category_map:
 tag_map:
 
-# Archives
+# Archives 默认2,修改为1,只列出标题
 ## 2: Enable pagination
 ## 1: Disable pagination
 ## 0: Fully Disable
-archive: 2
-category: 2
-tag: 2
+archive: 1
+category: 1
+tag: 1
 
 # Server
 ## Hexo uses Connect as a server
@@ -73,10 +73,17 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: light
+theme: greyshade #light #modernist
 exclude_generator:
+
+plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
 
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
+# 虽然推荐github的repository用https，但SSH clone URL可以避免每次输密码
 deploy:
-  type:
+  type: github
+  repository: git@github.com:shmilee/shmilee.github.io.git
+  branch: master
