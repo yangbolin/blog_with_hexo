@@ -2,6 +2,10 @@ menu:
   Home: /
   Archives: archives
 
+widgets:
+- category
+- recent_posts
+
 excerpt_link: Continue Reading →
 
 mathjax: true
