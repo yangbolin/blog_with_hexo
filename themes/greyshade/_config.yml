@@ -16,9 +16,24 @@ social:
 github:
   username: shmilee
 
-addit:
+## 两个分享工具, 百度和addthis, enable一个即可
+
+addthis:
+  enable: false
   facebook: false
   twitter: true
   gplus: true
   pinit: false
-  publid: ra-5206464767bea141
+  pubid:
+
+bdshare:
+  enable: true
+  uid: 2030893
+  douban: true
+  qzone: true
+  renren: true
+  tsina: true # sina微博
+  tqq: false # qq微博
+  twi: true # twitter
+  fbook: true # facebook
+  hi: false # 百度hi

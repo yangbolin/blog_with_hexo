@@ -2,7 +2,12 @@
   <%- partial('article', {item: item, index: index})%>
 </article>
 <% if(!index) { %>
-  <%- partial('post/sharing') %>
+  <% if(theme.bdshare.enable) { %>
+    <%- partial('post/bdshare') %>
+  <% } %>
+  <% if(theme.addthis.enable) { %>
+    <%- partial('post/sharing') %>
+  <% } %>
 <% } %>
 <% if(config.disqus_shortname && page.comments) { %>
 <section id="comment">
