@@ -36,7 +36,7 @@
   </div>
 </nav><!-- sub-nav -->
 <nav id="widget">
-<% theme.widgets.forEach(function(widget){ %>
-  <%- partial('../_widget/' + widget) %>
-<% }); %>
+<% for (var i in theme.menu){ %>
+      <li><a href="<%- config.root%><%- theme.menu[i] %>"><%= i %></a></li>
+<% } %>
 </nav>

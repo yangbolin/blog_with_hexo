@@ -1,0 +1,8 @@
+<% if(!index) { %>
+<% if(theme.bdshare.enable) { %>
+  <%- partial('post/bdshare') %>
+<% } %>
+<% if(theme.addthis.enable) { %>
+  <%- partial('post/sharing') %>
+<% } %>
+<% } %>

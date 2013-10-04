@@ -1,23 +1,7 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <%- partial('article', {item: item, index: index})%>
 </article>
-<% if(!index) { %>
-  <% if(theme.bdshare.enable) { %>
-    <%- partial('post/bdshare') %>
-  <% } %>
-  <% if(theme.addthis.enable) { %>
-    <%- partial('post/sharing') %>
-  <% } %>
-<% } %>
-<% if(config.disqus_shortname && page.comments) { %>
-<section id="comment">
-    <h1 class="title"><%= __('comment') %></h1>
-    <div id="disqus_thread" aria-live="polite"><%- partial('post/disqus_thread')%></div>
-</section>
-<% } else if (theme.duoshuo_shortname && page.comments){ %>
-<section id="comment">
-  <h1 class="title"><%= __('comment') %></h1>
-  <div id="duoshuo_thread" aria-live="polite"><%- partial('post/duoshuo_thread')%></div>
-  </div>
-</section>
-<% } %>
+
+<%- partial('share')%>
+
+<%- partial('comment')%>
