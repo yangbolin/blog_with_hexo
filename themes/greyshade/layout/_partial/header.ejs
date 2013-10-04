@@ -36,7 +36,10 @@
   </div>
 </nav><!-- sub-nav -->
 <nav id="menu">
+    <ul>
 <% for (var i in theme.menu){ %>
       <li><a href="<%- config.root%><%- theme.menu[i] %>"><%= i %></a></li>
 <% } %>
-</nav>
+    </ul>
+    <div class="clearfix"></div>
+</nav><!-- menu-nav -->

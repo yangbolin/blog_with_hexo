@@ -1,5 +1,14 @@
 <% if (site.posts.length){ %>
-<div class="widget tag">
+<%
+  var extraClass = '';
+  if (idx.current % 3 === 0) {
+    extraClass += ' first';
+    if (idx.current >= 3) {
+      extraClass += ' newline';
+    }
+  }
+%>
+<div class="widget recent-posts<%= extraClass %>">
   <h3 class="title"><%= __('recent_posts') %></h3>
   <ul class="entry">
     <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
@@ -9,4 +18,6 @@
     <% }); %>
   </ul>
 </div>
-<% } %>
+<% } else {
+  idx.current -= 1
+} %>

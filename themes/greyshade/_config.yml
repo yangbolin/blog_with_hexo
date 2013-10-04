@@ -1,9 +1,11 @@
 menu:
-  归档: archives
-  关于: about
+  Home: 
+  Archives: archives
+  About: about
 
 widgets:
 - category
+- tagcloud
 - recent_posts
 
 excerpt_link: Continue Reading →
