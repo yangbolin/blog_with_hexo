@@ -186,7 +186,15 @@ deploy:
 
 ####2. theme相关
 
-####3. 多说评论、百度分享、微博秀
+####3. 多说评论
+
+1. 注册:http://duoshuo.com/ , 获得通用代码.
+
+2. 主题目录内一般自带disqus,比照相关代码添加duoshuo
+
+ + [greyshade添加参考](https://github.com/shmilee/blog_with_hexo/commit/554a7e01f21f4927c42f93a316b8d750e5bb2704)
+
+、百度分享、微博秀
 
 ####4. 网站统计：百度或google
 
