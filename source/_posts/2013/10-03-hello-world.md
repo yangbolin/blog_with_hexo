@@ -184,9 +184,7 @@ deploy:
   branch: master
 ```
 
-####2. theme相关
-
-####3. 多说评论
+####2. 多说评论
 
 1. 注册:http://duoshuo.com/ , 获得通用代码.
 
@@ -194,9 +192,17 @@ deploy:
 
  + [greyshade添加参考](https://github.com/shmilee/blog_with_hexo/commit/554a7e01f21f4927c42f93a316b8d750e5bb2704)
 
-、百度分享、微博秀
+####3. 百度分享
 
-####4. 网站统计：百度或google
+1. 到[百度分享](http://share.baidu.com/code),获取代码.
+
+2. 添加到主题, [greyshade参考](https://github.com/shmilee/blog_with_hexo/commit/94877388292384854fcd493c8bf1628750e55092)
+
+####4. theme杂项
+
+####5. 微博秀
+
+####6. 网站统计：百度或google
 
 
 五、hexo常用命令简介
