@@ -26,10 +26,6 @@ if (page.archive) title = __('archive_a');
             <span class="comments">
               <a href="<%- config.root %><%- item.path %>#disqus_thread"><%= __('comment') %></a>
             </span>
-          <% } else if (theme.duoshuo_shortname && item.comments){ %>
-            <span class="comments">
-              <a href="<%- config.root %><%- item.path %>#duoshuo_thread"><%= __('comment') %></a>
-            </span>
           <% } %>
         </div>
         <h1 class="title" itemprop="name">
