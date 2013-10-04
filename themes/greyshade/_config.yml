@@ -8,15 +8,12 @@ mathjax: true
 fancybox: true
 
 social:
-  twitter: true
+  twitter: false
   github: true
   rss: true
 
-twitter:
-  username: nuklly
-
 github:
-  username: nuklly
+  username: shmilee
 
 addit:
   facebook: false
