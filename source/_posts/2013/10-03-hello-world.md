@@ -11,6 +11,8 @@ categories:
 
 Welcome to [Hexo](http://zespia.tw/hexo)! This is a very fast, simple & powerful blog post, powered by Node.js. Check [documentation](http://zespia.tw/hexo/docs) to learn how to use.
 
+<!--more-->
+
 一、安装hexo
 --------
 
@@ -203,10 +205,14 @@ deploy:
   $ hexo clean # 清理缓存(db.json)和生成的文件(public)
   ```
 
-* `init`：If folder isn't defined, Hexo will setup the website at the current directory. Hexo has 3 default layouts: `post`, `page` and `draft`. Other layouts will be saved in source/_posts by default.
+* `init`：
+  If folder isn't defined, Hexo will setup the website at the current directory. Hexo has 3 default layouts: `post`, `page` and `draft`. Other layouts will be saved in source/_posts by default.
 
-* `new`：If layout isn't defined, it’ll be default_layout setting. If the title is more than one word, wrap it with quotation marks.
+* `new`：
+  If layout isn't defined, it’ll be default_layout setting. If the title is more than one word, wrap it with quotation marks.
 
-* `generate` option： `-d` Deploy after generate done; `-w` Watch file changes.
+* `generate` option：
+  `-d` Deploy after generate done; `-w` Watch file changes.
 
-* `deploy` option：`--setup` Setup without deployment; `--generate` Generate before deployment.
+* `deploy` option：
+  `--setup` Setup without deployment; `--generate` Generate before deployment.
