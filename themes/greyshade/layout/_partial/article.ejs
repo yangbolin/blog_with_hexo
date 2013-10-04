@@ -5,7 +5,11 @@
           <%- partial('post/tag', {type: "index"}) %>
           <% if(item.comment & config.disqus_shortname) { %>
           <span class="comments">
-            <a href="<%- item.permalink %>#disqus_thread">Comments</a>
+            <a href="<%- item.permalink %>#disqus_thread"><%= __('comment') %></a>
+          </span>
+          <% } else if (item.comment & theme.duoshuo_shortname){ %>
+          <span class="comments">
+            <a href="<%- item.permalink %>#duoshuo_thread"><%= __('comment') %></a>
           </span>
           <% } %>
 	</div>

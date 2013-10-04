@@ -24,7 +24,11 @@ if (page.archive) title = __('archive_a');
           <%- partial('post/tag', {item: item, type: "archive"}) %>
           <% if(config.disqus_short_name && item.comments) { %>
             <span class="comments">
-              <a href="<%- config.root %><%- item.path %>#disqus_thread">Comments</a>
+              <a href="<%- config.root %><%- item.path %>#disqus_thread"><%= __('comment') %></a>
+            </span>
+          <% } else if (theme.duoshuo_shortname && item.comments){ %>
+            <span class="comments">
+              <a href="<%- config.root %><%- item.path %>#duoshuo_thread"><%= __('comment') %></a>
             </span>
           <% } %>
         </div>

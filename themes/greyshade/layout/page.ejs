@@ -9,9 +9,16 @@
 <% } %>
 <% if(site.disqus_short_name && page.comments) { %>
 <section id="comment">
-    <h1 class="title">Comments</h1>
+    <h1 class="title"><%= __('comment') %></h1>
     <div id="disqus_thread" aria-live="polite">
       <%- partial('_partial/post/disqus_thread.html')%>
+    </div>
+</section>
+<% } else if (theme.duoshuo_shortname && page.comments){ %>
+<section id="comment">
+    <h1 class="title"><%= __('comment') %></h1>
+    <div id="duoshuo_thread" aria-live="polite">
+      <%- partial('_partial/post/duoshuo_thread.html')%>
     </div>
 </section>
 <% } %>
