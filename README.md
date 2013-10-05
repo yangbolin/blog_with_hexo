@@ -199,11 +199,24 @@ deploy:
 2. 添加到主题, [greyshade参考](https://github.com/shmilee/blog_with_hexo/commit/94877388292384854fcd493c8bf1628750e55092)
 
 ####4. theme杂项
+
+* [theme:简体中文](https://github.com/shmilee/blog_with_hexo/commit/7f07ab9ce1fb41b9018b9ea4e5beefb0de2874ec)
+
+* [添加widgets](https://github.com/shmilee/blog_with_hexo/commit/6703fccebdc44340e30e5dcc317ad9c949fbc13b)
+
+* [默认生成categories配置项](https://github.com/shmilee/blog_with_hexo/commit/a94501d283725041057a6e9adb6dc4e2f9085680)
+
+* [归档类页面添加底边栏,存放widgets](https://github.com/shmilee/blog_with_hexo/commit/efa288a463b9f4b94131fe4051dc7a05f2bd7189)
+
+* [修改menu + aboutme样式](https://github.com/shmilee/blog_with_hexo/commit/c7088b6e895d8f67c434122f6dd4851a595337c3)
+
+* [social链接，添加微博和email](https://github.com/shmilee/blog_with_hexo/commit/2ca18381a123eae207bca4cf02b841477f031d95)
+
+* [blockquote 配色](https://github.com/shmilee/blog_with_hexo/commit/3b194898cbdbc6685400532855557871a1727e2a)
+
 前一页
 
-####5. 微博social
-
-####6. 网站统计：百度或google
+####5. 网站统计：百度或google
 
 
 五、hexo常用命令简介
