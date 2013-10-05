@@ -4,9 +4,9 @@ menu:
   About: /about
 
 widgets:
-- category
-- tagcloud
 - recent_posts
+- tagcloud
+- category
 
 excerpt_link: Continue Reading →
 
