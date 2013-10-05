@@ -214,7 +214,7 @@ deploy:
 
 * [blockquote 配色](https://github.com/shmilee/blog_with_hexo/commit/3b194898cbdbc6685400532855557871a1727e2a)
 
-前一页
+* [404 Page](https://github.com/shmilee/blog_with_hexo/commit/e21243bd3213a44055dd992652c0a6594a6fc417)
 
 ####5. 网站统计：百度或google
 
