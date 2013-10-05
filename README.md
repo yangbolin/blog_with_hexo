@@ -199,8 +199,9 @@ deploy:
 2. 添加到主题, [greyshade参考](https://github.com/shmilee/blog_with_hexo/commit/94877388292384854fcd493c8bf1628750e55092)
 
 ####4. theme杂项
+前一页
 
-####5. 微博秀
+####5. 微博social
 
 ####6. 网站统计：百度或google
 

@@ -1,7 +1,7 @@
 menu:
-  Home: 
-  Archives: archives
-  About: about
+  Home: /
+  Archives: /archives
+  About: /about
 
 widgets:
 - category
