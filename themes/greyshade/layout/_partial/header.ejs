@@ -25,18 +25,35 @@
   </section>
   <% } %>
 </nav><!-- main-nav -->
+<% if(theme.social.enable) { %>
 <nav id="sub-nav">
   <div class="social">
+    <% if(theme.social.tsina) { %>
+      <a class="tsina" href="http://weibo.com/<%- theme.social.tsina %>"
+         title="Weibo">Weibo</a>
+    <% } %>
+    <% if(theme.social.facebook) { %>
+      <a class="facebook" href="http://www.facebook.com/<%- theme.social.facebook %>"
+         title="Facebook">Facebook</a>
+    <% } %>
+    <% if(theme.social.google) { %>
+      <a class="google" href="http://plus.google.com/<%- theme.social.google %>"
+         title="Google+">Google+</a>
+    <% } %>
     <% if(theme.social.twitter) { %>
-      <a class="twitter" href="http://twitter.com/<%- theme.twitter.username %>"
+      <a class="twitter" href="http://twitter.com/<%- theme.social.twitter %>"
          title="Twitter">Twitter</a>
     <% } %>
     <% if(theme.social.github) { %>
-      <a class="github" href="http://github.com/<%- theme.github.username %>"
+      <a class="github" href="http://github.com/<%- theme.social.github %>"
          title="Github">Github</a>
+    <% } %>
+    <% if(theme.social.email) { %>
+        <a class="email" href="mailto:<%- config.email%>" title="Email">Email</a>
     <% } %>
     <% if(theme.social.rss) { %>
         <a class="rss" href="<%- config.root%>atom.xml" title="RSS">RSS</a>
     <% } %>
   </div>
 </nav><!-- sub-nav -->
+<% } %>

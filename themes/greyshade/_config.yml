@@ -16,11 +16,20 @@ fancybox: true
 duoshuo_shortname: shmilee-github
 
 social:
-  github: true
+  enable: true # 启用
+  tsina: shmilee # 个性域名
+  facebook: 
+  google: 
+  twitter: 
+  github: shmilee # username 
+  email: true # 在 root _config.yml 中填写
   rss: true
-
-github:
-  username: shmilee
+#  coderwall: 
+#  stackoverflow: 
+#  linkedin: 
+#  pinterest: 
+#  delicious: 
+#  pinboard:
 
 ## 两个分享工具, 百度和addthis, enable一个即可
 
