@@ -216,6 +216,9 @@ deploy:
 
 * [404 Page](https://github.com/shmilee/blog_with_hexo/commit/e21243bd3213a44055dd992652c0a6594a6fc417)
 
+高亮 css
+md文本格式
+
 ####5. 网站统计：百度或google
 
 
