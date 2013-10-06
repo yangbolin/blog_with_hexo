@@ -1,0 +1,27 @@
+# Maintainer: shmilee <shmilee.zju@gmail.com>
+
+_npmname=hexo
+pkgname=nodejs-hexo
+pkgver=2.2.0
+pkgrel=2
+pkgdesc="A fast, simple & powerful blog framework, powered by Node.js."
+arch=('any')
+url="http://zespia.tw/hexo/"
+license=('MIT')
+depends=('nodejs')
+source=('gitcafe.patch')
+md5sums=('623bc34bcf0baf1185825b24d9f0bca5')
+options=(!strip)
+
+package() {
+  local _npmdir="$pkgdir/usr/lib/node_modules/"
+  install -dm755 "$_npmdir"
+  cd "$_npmdir"
+  npm install --user root -g --prefix "$pkgdir/usr" $_npmname@$pkgver
+
+  # add gitcafe
+  cd hexo/lib/plugins/deployer/
+  patch github.js < "$srcdir"/gitcafe.patch -o gitcafe.js
+  chmod 644 gitcafe.js
+  echo "deployer.register('gitcafe', require('./gitcafe'));" >> index.js
+}

@@ -2,5 +2,6 @@
 db.json
 public
 .deploy
+.deploy-gitcafe
 *~
 debug.log

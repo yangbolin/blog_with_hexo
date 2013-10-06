@@ -87,3 +87,7 @@ deploy:
   type: github
   repository: git@github.com:shmilee/shmilee.github.io.git
   branch: master
+#deploy:
+#  type: gitcafe
+#  repository: git@gitcafe.com:shmilee/shmilee.git
+#  branch: gitcafe-pages
