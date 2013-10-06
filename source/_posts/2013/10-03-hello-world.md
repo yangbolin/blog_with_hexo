@@ -19,22 +19,22 @@ Welcome to [Hexo](http://zespia.tw/hexo)! This is a very fast, simple & powerful
   首先，安装`hexo`的依赖`git`和`node.js`，archlinux下包的名称为`git`和`nodejs`。然后，有两种方式安装`hexo`：  
   (1)用`npm`安装;  
   (2)安装AUR上的`nodejs-hexo`。
-  ```
+  ```bash
   $ sudo pacman -S git nodejs
   $ npm install -g hexo #(1)
   $ yaourt -S nodejs-hexo #(2)
   ```
   以上也可以一步到位：
-  ```
+  ```bash
   $ yaourt -S git nodejs nodejs-hexo
   ```
 
   安装好之后，便可以初始化一个工作目录。执行
-  ```
+  ```bash
   $ hexo init target_dir
   ```
   或者，
-  ```
+  ```bash
   $ cd target_dir
   $ hexo init
   ```
@@ -46,27 +46,27 @@ Welcome to [Hexo](http://zespia.tw/hexo)! This is a very fast, simple & powerful
   注意：以下命令都是在hexo建立的工作目录下执行。安装完成，如果要启用，请将其添加到总配置文件`_config.yml`，下文会提到。
 
   RSS Feed：
-  ```
+  ```bash
   $ npm install hexo-generator-feed --save
   ```
   Sitemap：
-  ```
+  ```bash
   $ npm install hexo-generator-sitemap --save
   ```
   Migrate from wordpress:
-  ```
+  ```bash
   $ npm install hexo-migrator-wordpress --save
   ```
   Use vim to highlight code in your markdown source:
-  ```
+  ```bash
   $ npm install hexo-tag-vimhighlight --save
   ```
   Automatic summarization：
-  ```
+  ```bash
   $ npm install git://github.com/vfasky/hexo-summarizer.git
   ```
   gzip hexo static files, in order to avoid Apache2/Nginx gzipping at the fly (better performance)
-  ```
+  ```bash
   $ npm install hexo-gzip --save
   ```
 
@@ -76,7 +76,7 @@ Welcome to [Hexo](http://zespia.tw/hexo)! This is a very fast, simple & powerful
   主页：https://github.com/tommy351/hexo/wiki/Themes
 
   选择：`light`（默认自带）、`greyshade`（修改使用）、`modernist`（显示代码不错）
-  ```
+  ```bash
   $ cd target_dir
   $ git clone https://github.com/nuklly/hexo-theme-greyshade.git themes/greyshade
   $ git clone git://github.com/heroicyang/hexo-theme-modernist.git themes/modernist
@@ -218,8 +218,7 @@ deploy:
 
 * [forkme on github](https://github.com/shmilee/blog_with_hexo/commit/a3985b49fe61ade3acf40425622d574945ace251)
 
-高亮 css
-md文本格式
+TODO: 高亮 css; md文本格式
 
 ####5. 网站统计：百度或google
 
@@ -228,7 +227,7 @@ md文本格式
 ----------
   来自：http://zespia.tw/hexo/docs/commands.html
 
-  ```
+  ```bash
   $ hexo init [folder] # 初始化一个网站
   $ hexo new [layout] <title> # 创建新文章
   $ hexo generate # 生成静态网页
