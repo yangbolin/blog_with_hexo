@@ -16,6 +16,8 @@ forkme_on_github: true
 
 duoshuo_shortname: shmilee-github
 
+## If your site is put in a subdirectory, set root in file '_root_css.styl'
+
 social:
   enable: true # 启用
   tsina: shmilee # 个性域名
